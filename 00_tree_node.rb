@@ -21,6 +21,10 @@ class PolyTreeNode
     @value
   end
   
+  def inspect
+    "<PolyTreeNode: #{"test"}"
+  end
+  
   def parent=(node)
     @parent.children.delete(self) if @parent
     @parent = node
